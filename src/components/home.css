@@ -1,3 +1,11 @@
-.active,.selected {
-    color: red;
+.container {
+    padding-left: 256px;
+    min-height: 300px;
+}
+.menubar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 256px;
 }

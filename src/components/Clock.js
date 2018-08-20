@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {BrowserRouter, Route, Link,NavLink} from 'react-router-dom';
+import {BrowserRouter, Route,NavLink} from 'react-router-dom';
 import './clock.css'
 import Clock1 from "./Clock1";
 import Clock2 from "./Clock2";
