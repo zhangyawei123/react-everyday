@@ -1,23 +1,32 @@
 import React, {Component} from 'react';
-import { Button } from 'antd';
+import { Button ,Input } from 'antd';
 
 
 class Test extends Component {
-    state = {
-        loading: true
+    constructor(props) {
+        super(props)
+        this.state = {
+            loading: true,
+            arr: [1,2,3,4],
+            inputValue: 'input'
+        }
+    }
+
+
+    handleClick() {
+        alert(33)
+    }
+    inputHandleChange(e) {
+        this.setState({
+            inputValue: e.target.value
+        })
     }
     render() {
         return (
                 <div>
-                    <Button type="primary" block shape="circle" icon="search" />
-                    <Button type="primary" block loading={this.state.loading} icon="search">Search</Button>
-                    <Button shape="circle" icon="search" />
-                    <Button icon="search">Search</Button>
-                    <br />
-                    <Button shape="circle" icon="search" />
-                    <Button icon="search">Search</Button>
-                    <Button type="dashed" shape="circle" icon="search" />
-                    <Button type="dashed" icon="search">Search</Button>
+                    <Button type="primary" onClick={this.handleClick.bind(this)} shape="circle" icon="search" />
+                    <Input placeholder="Basic usage" value={this.state.inputValue} onChange={this.inputHandleChange.bind(this)} />
+                    {this.state.inputValue}
                 </div>
         );
     }
