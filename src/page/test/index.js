@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Button ,Input } from 'antd';
-import axios from 'axios'
+// import axios from 'axios'
 
 class Test extends Component {
     constructor(props) {
@@ -15,13 +15,6 @@ class Test extends Component {
 
     }
     componentDidMount() {
-        axios.get('http://192.168.1.20:9428/api/warn_info').then(res=> {
-            console.log(res.data)
-            this.setState({
-                arr: res.data
-            });
-        })
-        console.log(this.refs.demo)
         this.refs.demo.onclick = () => {
             console.log(this.refs.demo)
         }
