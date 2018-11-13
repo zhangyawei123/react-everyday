@@ -13,7 +13,7 @@ class App extends Component {
     render() {
         return (
             <BrowserRouter>
-                <div className={'container'}>
+                <div className='container'>
                     <Route path="/" exact component={Home} />
                     <Route path="/login" component={Login} />
                 </div>
