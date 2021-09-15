@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Row, Col } from 'antd';
 import { NavLink } from 'react-router-dom';
-import './index.css'
+import './index.scss'
 
 const selectedStyle = {
     backgroundColor: 'white',
